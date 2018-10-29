@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#212121"
+
+    tools:context="xyz.pickles.empire.Agents">
+
+    <LinearLayout
+        android:layout_width="530dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="9dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="9dp"
+        android:background="@drawable/rounded_border_edittext"
+        android:orientation="vertical"
+        android:weightSum="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1">
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@null"
+                android:ems="10"
+                android:text="Agent Details"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/modules_tv"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="380dp"
+                android:background="@null"
+                android:ems="10"
+                android:text="Use Modules"
+                android:textColor="@android:color/white"/>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="25dp"
+                android:background="@android:color/darker_gray"
+                android:hint="name"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="50dp"
+                android:background="@android:color/darker_gray"
+                android:hint="hostname"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="75dp"
+                android:background="@android:color/darker_gray"
+                android:hint="process id"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="100dp"
+                android:background="@android:color/darker_gray"
+                android:hint="external ip"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="125dp"
+                android:background="@android:color/darker_gray"
+                android:hint="internal ip"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="150dp"
+                android:background="@android:color/darker_gray"
+                android:hint="listener"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="170dp"
+                android:layout_marginTop="25dp"
+                android:background="@android:color/darker_gray"
+                android:hint="process name"
+                android:paddingLeft="10dp" />
+
+            <Spinner
+                android:layout_width="130dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="380dp"
+                android:layout_marginTop="30dp"
+                android:id="@+id/powershell_spinner"
+                android:background="#00FF00">
+
+            </Spinner>
+
+            <Spinner
+                android:layout_width="130dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="65dp"
+                android:layout_marginStart="380dp"
+                android:background="#00FF00"
+                android:id="@+id/python_spinner"
+                >
+
+            </Spinner>
+
+            <Spinner
+                android:layout_width="130dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginStart="380dp"
+                android:background="#00FF00"
+                android:id="@+id/exfil_spinner"
+                >
+
+            </Spinner>
+
+            <Spinner
+                android:layout_width="130dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="135dp"
+                android:layout_marginStart="380dp"
+                android:background="#00FF00"
+                android:id="@+id/external_spinner"
+                >
+
+            </Spinner>
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="170dp"
+                android:layout_marginTop="50dp"
+                android:background="@android:color/darker_gray"
+                android:hint="username"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="170dp"
+                android:layout_marginTop="75dp"
+                android:background="@android:color/darker_gray"
+                android:hint="lastseen time"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="170dp"
+                android:layout_marginTop="100dp"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit ="marquee_forever"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:scrollHorizontally="true"
+                android:background="@android:color/darker_gray"
+                android:freezesText="true"
+                android:hint="os details"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"/>
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="170dp"
+                android:layout_marginTop="125dp"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit ="marquee_forever"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:scrollHorizontally="true"
+                android:freezesText="true"
+                android:background="@android:color/darker_gray"
+                android:hint="checkin_time"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"/>
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="170dp"
+                android:layout_marginTop="150dp"
+                android:background="@android:color/darker_gray"
+                android:hint="delay"
+                android:paddingLeft="10dp" />
+
+            <Button
+                android:id="@+id/rename_button"
+                android:layout_width="80dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="175dp"
+                android:background="@android:color/holo_blue_dark"
+                android:text="Rename"
+                android:textSize="5pt" />
+
+            <Button
+                android:id="@+id/execute_button"
+                android:layout_width="80dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="200dp"
+                android:background="@android:color/holo_blue_dark"
+                android:text="Execute"
+                android:textSize="5pt" />
+
+            <Button
+                android:id="@+id/delete_results"
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="95dp"
+                android:layout_marginTop="175dp"
+                android:background="@android:color/holo_blue_dark"
+                android:text="Delete Results"
+                android:textSize="5pt" />
+
+            <Button
+                android:id="@+id/removeagent_button"
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="200dp"
+                android:layout_marginTop="175dp"
+                android:background="@android:color/holo_blue_dark"
+                android:text="Remove Agent"
+                android:textSize="5pt" />
+
+            <Button
+                android:id="@+id/removestale_button"
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="305dp"
+                android:layout_marginTop="175dp"
+                android:background="@android:color/holo_blue_dark"
+                android:text="Remove Stale"
+                android:textSize="5pt" />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:id="@+id/getcreds_button"
+                android:layout_marginStart="410dp"
+                android:layout_marginTop="175dp"
+                android:background="@android:color/holo_blue_dark"
+                android:text="Get Creds"
+                android:textSize="5pt" />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:id="@+id/eventslogged_button"
+                android:layout_marginTop="200dp"
+                android:layout_marginStart="410dp"
+                android:background="@android:color/holo_blue_dark"
+                android:text="Events Logged"
+                android:textSize="5pt" />
+
+            <Button
+                android:id="@+id/cleartask_button"
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="305dp"
+                android:layout_marginTop="200dp"
+                android:background="@android:color/holo_blue_dark"
+                android:text="Clear Tasks"
+                android:textSize="5pt" />
+
+            <Button
+                android:id="@+id/kill_button"
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="200dp"
+                android:layout_marginTop="200dp"
+                android:background="@android:color/holo_blue_dark"
+                android:text="Kill Agent"
+                android:textSize="5pt" />
+
+            <Button
+                android:id="@+id/results_button"
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="95dp"
+                android:layout_marginTop="200dp"
+                android:background="@android:color/holo_blue_dark"
+                android:text="Get Results"
+                android:textSize="5pt" />
+
+            <TextView
+                android:id="@+id/results_textview"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="225dp"
+                android:padding="10dp"
+                android:scrollbars="vertical"
+                android:textColor="#00FF00"
+                android:background="@drawable/rounded_border_edittext" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/agent_layout"
+        android:layout_width="130dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="9dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="9dp"
+        android:background="@drawable/rounded_border_edittext"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1">
+        >
+
+        <Button
+            android:id="@+id/refreshAgentsBttn"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/holo_blue_dark"
+            android:ems="10"
+            android:text="Refresh Agents"
+            android:textSize="5pt"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/agent_Scroll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!--
+                Required to Add CheckBoxes Here Dynamically
+                -->
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <!--
+        Required to Add CheckBoxes Here Dynamically
+        -->
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
+

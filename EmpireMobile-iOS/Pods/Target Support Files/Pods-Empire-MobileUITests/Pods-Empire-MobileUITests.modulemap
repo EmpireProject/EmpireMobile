@@ -1,0 +1,6 @@
+framework module Pods_Empire_MobileUITests {
+  umbrella header "Pods-Empire-MobileUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

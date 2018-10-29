@@ -1,0 +1,736 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AE8CFCEE3EA4F3ED86B7DA6D /* Pods_Empire_MobileTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98C8A8196323C6B028D80189 /* Pods_Empire_MobileTests.framework */; };
+		EADD42E49A7FBA04CED2A5A9 /* Pods_Empire_MobileUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE4BC7E60381687C8F7DB21A /* Pods_Empire_MobileUITests.framework */; };
+		F46C6170B3891D73A422CA81 /* Pods_Empire_Mobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E263CB57DE69943DE60D8C62 /* Pods_Empire_Mobile.framework */; };
+		FB042A0B2097A1DB003612AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB042A0A2097A1DB003612AD /* ViewController.swift */; };
+		FB42D8B720B5ACCE009B0D73 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB42D8B620B5ACCE009B0D73 /* PopUpViewController.swift */; };
+		FB5334BF20979BFB00F5483C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5334BE20979BFB00F5483C /* AppDelegate.swift */; };
+		FB5334C420979BFB00F5483C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB5334C220979BFB00F5483C /* Main.storyboard */; };
+		FB5334C620979BFD00F5483C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB5334C520979BFD00F5483C /* Assets.xcassets */; };
+		FB5334D420979BFD00F5483C /* Empire_MobileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5334D320979BFD00F5483C /* Empire_MobileTests.swift */; };
+		FB5334DF20979BFD00F5483C /* Empire_MobileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5334DE20979BFD00F5483C /* Empire_MobileUITests.swift */; };
+		FB6EB07520ADD59F006322D1 /* AgentsChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6EB07420ADD59F006322D1 /* AgentsChildViewController.swift */; };
+		FB8F9ED820C9C14400C14BE4 /* splashSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8F9ED720C9C14400C14BE4 /* splashSceneViewController.swift */; };
+		FBA72E7320BDA23300C83438 /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA72E7220BDA23300C83438 /* PickerViewController.swift */; };
+		FBE5BB0920AB60EF004CBE07 /* AgentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE5BB0820AB60EF004CBE07 /* AgentsViewController.swift */; };
+		FBEADD81209BB10F00CA68C5 /* PostLoginControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEADD80209BB10F00CA68C5 /* PostLoginControllerViewController.swift */; };
+		FBEADD83209CD86500CA68C5 /* helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEADD82209CD86500CA68C5 /* helper.swift */; };
+		FBEADD85209D3EF000CA68C5 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FBEADD84209D3EF000CA68C5 /* Default-568h@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FB5334D020979BFD00F5483C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB5334B320979BFB00F5483C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB5334BA20979BFB00F5483C;
+			remoteInfo = "Empire-Mobile";
+		};
+		FB5334DB20979BFD00F5483C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB5334B320979BFB00F5483C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB5334BA20979BFB00F5483C;
+			remoteInfo = "Empire-Mobile";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03A1CADD8AD57C57CB630998 /* Pods-Empire-Mobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Empire-Mobile.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Empire-Mobile/Pods-Empire-Mobile.debug.xcconfig"; sourceTree = "<group>"; };
+		091CF672EB286B8EFBE2CFC8 /* Pods-Empire-MobileTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Empire-MobileTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Empire-MobileTests/Pods-Empire-MobileTests.release.xcconfig"; sourceTree = "<group>"; };
+		347FDEC8AA8D689F9FDF89EA /* Pods-Empire-MobileUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Empire-MobileUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Empire-MobileUITests/Pods-Empire-MobileUITests.release.xcconfig"; sourceTree = "<group>"; };
+		65839ED9E9914E7044CC0A15 /* Pods-Empire-Mobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Empire-Mobile.release.xcconfig"; path = "Pods/Target Support Files/Pods-Empire-Mobile/Pods-Empire-Mobile.release.xcconfig"; sourceTree = "<group>"; };
+		98C8A8196323C6B028D80189 /* Pods_Empire_MobileTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Empire_MobileTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA263D61589CBAACE3A4D6CA /* Pods-Empire-MobileTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Empire-MobileTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Empire-MobileTests/Pods-Empire-MobileTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E263CB57DE69943DE60D8C62 /* Pods_Empire_Mobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Empire_Mobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E79CD64DC78C8EF8D994CC5E /* Pods-Empire-MobileUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Empire-MobileUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Empire-MobileUITests/Pods-Empire-MobileUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FB042A0A2097A1DB003612AD /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FB42D8B620B5ACCE009B0D73 /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
+		FB5334BB20979BFB00F5483C /* Empire-Mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Empire-Mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB5334BE20979BFB00F5483C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FB5334C320979BFB00F5483C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FB5334C520979BFD00F5483C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FB5334CA20979BFD00F5483C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB5334CF20979BFD00F5483C /* Empire-MobileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Empire-MobileTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB5334D320979BFD00F5483C /* Empire_MobileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Empire_MobileTests.swift; sourceTree = "<group>"; };
+		FB5334D520979BFD00F5483C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB5334DA20979BFD00F5483C /* Empire-MobileUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Empire-MobileUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB5334DE20979BFD00F5483C /* Empire_MobileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Empire_MobileUITests.swift; sourceTree = "<group>"; };
+		FB5334E020979BFD00F5483C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB6EB07420ADD59F006322D1 /* AgentsChildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentsChildViewController.swift; sourceTree = "<group>"; };
+		FB8F9ED720C9C14400C14BE4 /* splashSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = splashSceneViewController.swift; sourceTree = "<group>"; };
+		FBA72E7220BDA23300C83438 /* PickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
+		FBE5BB0820AB60EF004CBE07 /* AgentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentsViewController.swift; sourceTree = "<group>"; };
+		FBEADD80209BB10F00CA68C5 /* PostLoginControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostLoginControllerViewController.swift; sourceTree = "<group>"; };
+		FBEADD82209CD86500CA68C5 /* helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = helper.swift; sourceTree = "<group>"; };
+		FBEADD84209D3EF000CA68C5 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		FE4BC7E60381687C8F7DB21A /* Pods_Empire_MobileUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Empire_MobileUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FB5334B820979BFB00F5483C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F46C6170B3891D73A422CA81 /* Pods_Empire_Mobile.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB5334CC20979BFD00F5483C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE8CFCEE3EA4F3ED86B7DA6D /* Pods_Empire_MobileTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB5334D720979BFD00F5483C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EADD42E49A7FBA04CED2A5A9 /* Pods_Empire_MobileUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0FE9005B0083DC6111D01FC2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				03A1CADD8AD57C57CB630998 /* Pods-Empire-Mobile.debug.xcconfig */,
+				65839ED9E9914E7044CC0A15 /* Pods-Empire-Mobile.release.xcconfig */,
+				DA263D61589CBAACE3A4D6CA /* Pods-Empire-MobileTests.debug.xcconfig */,
+				091CF672EB286B8EFBE2CFC8 /* Pods-Empire-MobileTests.release.xcconfig */,
+				E79CD64DC78C8EF8D994CC5E /* Pods-Empire-MobileUITests.debug.xcconfig */,
+				347FDEC8AA8D689F9FDF89EA /* Pods-Empire-MobileUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F71F8C653C4004554373613A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E263CB57DE69943DE60D8C62 /* Pods_Empire_Mobile.framework */,
+				98C8A8196323C6B028D80189 /* Pods_Empire_MobileTests.framework */,
+				FE4BC7E60381687C8F7DB21A /* Pods_Empire_MobileUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FB5334B220979BFB00F5483C = {
+			isa = PBXGroup;
+			children = (
+				FBEADD84209D3EF000CA68C5 /* Default-568h@2x.png */,
+				FB5334BD20979BFB00F5483C /* Empire-Mobile */,
+				FB5334D220979BFD00F5483C /* Empire-MobileTests */,
+				FB5334DD20979BFD00F5483C /* Empire-MobileUITests */,
+				FB5334BC20979BFB00F5483C /* Products */,
+				0FE9005B0083DC6111D01FC2 /* Pods */,
+				F71F8C653C4004554373613A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FB5334BC20979BFB00F5483C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FB5334BB20979BFB00F5483C /* Empire-Mobile.app */,
+				FB5334CF20979BFD00F5483C /* Empire-MobileTests.xctest */,
+				FB5334DA20979BFD00F5483C /* Empire-MobileUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FB5334BD20979BFB00F5483C /* Empire-Mobile */ = {
+			isa = PBXGroup;
+			children = (
+				FB042A0A2097A1DB003612AD /* ViewController.swift */,
+				FBEADD82209CD86500CA68C5 /* helper.swift */,
+				FBEADD80209BB10F00CA68C5 /* PostLoginControllerViewController.swift */,
+				FBE5BB0820AB60EF004CBE07 /* AgentsViewController.swift */,
+				FB6EB07420ADD59F006322D1 /* AgentsChildViewController.swift */,
+				FB42D8B620B5ACCE009B0D73 /* PopUpViewController.swift */,
+				FBA72E7220BDA23300C83438 /* PickerViewController.swift */,
+				FB8F9ED720C9C14400C14BE4 /* splashSceneViewController.swift */,
+				FB5334BE20979BFB00F5483C /* AppDelegate.swift */,
+				FB5334C220979BFB00F5483C /* Main.storyboard */,
+				FB5334C520979BFD00F5483C /* Assets.xcassets */,
+				FB5334CA20979BFD00F5483C /* Info.plist */,
+			);
+			path = "Empire-Mobile";
+			sourceTree = "<group>";
+		};
+		FB5334D220979BFD00F5483C /* Empire-MobileTests */ = {
+			isa = PBXGroup;
+			children = (
+				FB5334D320979BFD00F5483C /* Empire_MobileTests.swift */,
+				FB5334D520979BFD00F5483C /* Info.plist */,
+			);
+			path = "Empire-MobileTests";
+			sourceTree = "<group>";
+		};
+		FB5334DD20979BFD00F5483C /* Empire-MobileUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FB5334DE20979BFD00F5483C /* Empire_MobileUITests.swift */,
+				FB5334E020979BFD00F5483C /* Info.plist */,
+			);
+			path = "Empire-MobileUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FB5334BA20979BFB00F5483C /* Empire-Mobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB5334E320979BFE00F5483C /* Build configuration list for PBXNativeTarget "Empire-Mobile" */;
+			buildPhases = (
+				300C90EDA0DD81555C60F734 /* [CP] Check Pods Manifest.lock */,
+				FB5334B720979BFB00F5483C /* Sources */,
+				FB5334B820979BFB00F5483C /* Frameworks */,
+				FB5334B920979BFB00F5483C /* Resources */,
+				769713E8BFEDBD7606B15F13 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Empire-Mobile";
+			productName = "Empire-Mobile";
+			productReference = FB5334BB20979BFB00F5483C /* Empire-Mobile.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FB5334CE20979BFD00F5483C /* Empire-MobileTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB5334E620979BFE00F5483C /* Build configuration list for PBXNativeTarget "Empire-MobileTests" */;
+			buildPhases = (
+				8D1BFBD5990CD90E628F020F /* [CP] Check Pods Manifest.lock */,
+				FB5334CB20979BFD00F5483C /* Sources */,
+				FB5334CC20979BFD00F5483C /* Frameworks */,
+				FB5334CD20979BFD00F5483C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB5334D120979BFD00F5483C /* PBXTargetDependency */,
+			);
+			name = "Empire-MobileTests";
+			productName = "Empire-MobileTests";
+			productReference = FB5334CF20979BFD00F5483C /* Empire-MobileTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FB5334D920979BFD00F5483C /* Empire-MobileUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB5334E920979BFE00F5483C /* Build configuration list for PBXNativeTarget "Empire-MobileUITests" */;
+			buildPhases = (
+				E0D56B4A3F8D05AEB8B6E84A /* [CP] Check Pods Manifest.lock */,
+				FB5334D620979BFD00F5483C /* Sources */,
+				FB5334D720979BFD00F5483C /* Frameworks */,
+				FB5334D820979BFD00F5483C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB5334DC20979BFD00F5483C /* PBXTargetDependency */,
+			);
+			name = "Empire-MobileUITests";
+			productName = "Empire-MobileUITests";
+			productReference = FB5334DA20979BFD00F5483C /* Empire-MobileUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FB5334B320979BFB00F5483C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = Pickles;
+				TargetAttributes = {
+					FB5334BA20979BFB00F5483C = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					FB5334CE20979BFD00F5483C = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = FB5334BA20979BFB00F5483C;
+					};
+					FB5334D920979BFD00F5483C = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = FB5334BA20979BFB00F5483C;
+					};
+				};
+			};
+			buildConfigurationList = FB5334B620979BFB00F5483C /* Build configuration list for PBXProject "Empire-Mobile" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FB5334B220979BFB00F5483C;
+			productRefGroup = FB5334BC20979BFB00F5483C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FB5334BA20979BFB00F5483C /* Empire-Mobile */,
+				FB5334CE20979BFD00F5483C /* Empire-MobileTests */,
+				FB5334D920979BFD00F5483C /* Empire-MobileUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FB5334B920979BFB00F5483C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB5334C620979BFD00F5483C /* Assets.xcassets in Resources */,
+				FB5334C420979BFB00F5483C /* Main.storyboard in Resources */,
+				FBEADD85209D3EF000CA68C5 /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB5334CD20979BFD00F5483C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB5334D820979BFD00F5483C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		300C90EDA0DD81555C60F734 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Empire-Mobile-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		769713E8BFEDBD7606B15F13 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Empire-Mobile/Pods-Empire-Mobile-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/PKHUD/PKHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PKHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Empire-Mobile/Pods-Empire-Mobile-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D1BFBD5990CD90E628F020F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Empire-MobileTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0D56B4A3F8D05AEB8B6E84A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Empire-MobileUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FB5334B720979BFB00F5483C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBE5BB0920AB60EF004CBE07 /* AgentsViewController.swift in Sources */,
+				FBEADD81209BB10F00CA68C5 /* PostLoginControllerViewController.swift in Sources */,
+				FBA72E7320BDA23300C83438 /* PickerViewController.swift in Sources */,
+				FB42D8B720B5ACCE009B0D73 /* PopUpViewController.swift in Sources */,
+				FB042A0B2097A1DB003612AD /* ViewController.swift in Sources */,
+				FB5334BF20979BFB00F5483C /* AppDelegate.swift in Sources */,
+				FB8F9ED820C9C14400C14BE4 /* splashSceneViewController.swift in Sources */,
+				FBEADD83209CD86500CA68C5 /* helper.swift in Sources */,
+				FB6EB07520ADD59F006322D1 /* AgentsChildViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB5334CB20979BFD00F5483C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB5334D420979BFD00F5483C /* Empire_MobileTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB5334D620979BFD00F5483C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB5334DF20979BFD00F5483C /* Empire_MobileUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FB5334D120979BFD00F5483C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB5334BA20979BFB00F5483C /* Empire-Mobile */;
+			targetProxy = FB5334D020979BFD00F5483C /* PBXContainerItemProxy */;
+		};
+		FB5334DC20979BFD00F5483C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB5334BA20979BFB00F5483C /* Empire-Mobile */;
+			targetProxy = FB5334DB20979BFD00F5483C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FB5334C220979BFB00F5483C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB5334C320979BFB00F5483C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FB5334E120979BFE00F5483C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FB5334E220979BFE00F5483C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FB5334E420979BFE00F5483C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03A1CADD8AD57C57CB630998 /* Pods-Empire-Mobile.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DTA3UFBM8J;
+				INFOPLIST_FILE = "Empire-Mobile/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "xyz.pickles.Empire-Mobile";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FB5334E520979BFE00F5483C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65839ED9E9914E7044CC0A15 /* Pods-Empire-Mobile.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DTA3UFBM8J;
+				INFOPLIST_FILE = "Empire-Mobile/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "xyz.pickles.Empire-Mobile";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FB5334E720979BFE00F5483C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA263D61589CBAACE3A4D6CA /* Pods-Empire-MobileTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Empire-MobileTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "xyz.pickles.Empire-MobileTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Empire-Mobile.app/Empire-Mobile";
+			};
+			name = Debug;
+		};
+		FB5334E820979BFE00F5483C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 091CF672EB286B8EFBE2CFC8 /* Pods-Empire-MobileTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Empire-MobileTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "xyz.pickles.Empire-MobileTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Empire-Mobile.app/Empire-Mobile";
+			};
+			name = Release;
+		};
+		FB5334EA20979BFE00F5483C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E79CD64DC78C8EF8D994CC5E /* Pods-Empire-MobileUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Empire-MobileUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "xyz.pickles.Empire-MobileUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Empire-Mobile";
+			};
+			name = Debug;
+		};
+		FB5334EB20979BFE00F5483C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 347FDEC8AA8D689F9FDF89EA /* Pods-Empire-MobileUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Empire-MobileUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "xyz.pickles.Empire-MobileUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Empire-Mobile";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FB5334B620979BFB00F5483C /* Build configuration list for PBXProject "Empire-Mobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB5334E120979BFE00F5483C /* Debug */,
+				FB5334E220979BFE00F5483C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB5334E320979BFE00F5483C /* Build configuration list for PBXNativeTarget "Empire-Mobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB5334E420979BFE00F5483C /* Debug */,
+				FB5334E520979BFE00F5483C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB5334E620979BFE00F5483C /* Build configuration list for PBXNativeTarget "Empire-MobileTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB5334E720979BFE00F5483C /* Debug */,
+				FB5334E820979BFE00F5483C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB5334E920979BFE00F5483C /* Build configuration list for PBXNativeTarget "Empire-MobileUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB5334EA20979BFE00F5483C /* Debug */,
+				FB5334EB20979BFE00F5483C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FB5334B320979BFB00F5483C /* Project object */;
+}

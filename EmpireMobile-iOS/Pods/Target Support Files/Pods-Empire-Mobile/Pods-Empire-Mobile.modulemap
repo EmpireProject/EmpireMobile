@@ -1,0 +1,6 @@
+framework module Pods_Empire_Mobile {
+  umbrella header "Pods-Empire-Mobile-umbrella.h"
+
+  export *
+  module * { export * }
+}

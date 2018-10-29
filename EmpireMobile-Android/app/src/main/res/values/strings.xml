@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Empire Mobile</string>
+    <item name="visible" type="id"></item>
+</resources>
