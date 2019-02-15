@@ -1,7 +1,12 @@
 package xyz.pickles.empire;
 
+import android.content.SharedPreferences;
 import android.os.AsyncTask;
+import android.security.keystore.KeyGenParameterSpec;
+import android.security.keystore.KeyProperties;
+import android.util.Base64;
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -9,11 +14,21 @@ import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import javax.crypto.Cipher;
+import javax.crypto.KeyGenerator;
+import javax.crypto.SecretKey;
+import javax.crypto.spec.GCMParameterSpec;
 import javax.net.ssl.HostnameVerifier;
 import javax.net.ssl.HttpsURLConnection;
 import javax.net.ssl.SSLSession;
+import java.security.KeyStore;
+import java.security.MessageDigest;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+import static android.content.Context.MODE_PRIVATE;
 
 public class helper {
 
@@ -176,4 +191,123 @@ public class helper {
         matcher = pattern.matcher(inputString);
         return matcher.matches();
     }
+
+    public static String storeCreds(String data) {
+        return encrypt(data);
+    }
+
+    private static void keyGen() {
+        try {
+
+            final KeyGenerator keyGenny = KeyGenerator.getInstance(KeyProperties.KEY_ALGORITHM_AES, "AndroidKeyStore");
+            final KeyGenParameterSpec paramSpec = new KeyGenParameterSpec.Builder("Empire", KeyProperties.PURPOSE_ENCRYPT | KeyProperties.PURPOSE_DECRYPT).setBlockModes(KeyProperties.BLOCK_MODE_GCM).setEncryptionPaddings(KeyProperties.ENCRYPTION_PADDING_NONE).build();
+            keyGenny.init(paramSpec);
+            SecretKey secret = keyGenny.generateKey();
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+    }
+
+    private static String encrypt(String data) {
+        String encryptedString = null;
+        try{
+            KeyStore keyStore = KeyStore.getInstance("AndroidKeyStore");
+            keyStore.load(null);
+            final KeyStore.SecretKeyEntry keyEntry = (KeyStore.SecretKeyEntry) keyStore.getEntry("Empire", null);
+            final SecretKey secretKey = keyEntry.getSecretKey();
+            final Cipher cipher = Cipher.getInstance("AES/GCM/NoPadding");
+            cipher.init(Cipher.ENCRYPT_MODE, secretKey);
+            byte[] iv = cipher.getIV();
+            byte[] encrypted = cipher.doFinal(data.getBytes("UTF-8"));
+            byte[] encrypted1 = new byte[iv.length + encrypted.length];
+            System.arraycopy(iv, 0, encrypted1, 0, iv.length);
+            System.arraycopy(encrypted, 0, encrypted1, iv.length, encrypted.length);
+            encryptedString = Base64.encodeToString(encrypted1, Base64.DEFAULT);
+
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+        return encryptedString;
+    }
+
+    private static String decrypt(String encryptedString) {
+        String data = null;
+        try {
+            KeyStore keyStore = KeyStore.getInstance("AndroidKeyStore");
+            keyStore.load(null);
+            final KeyStore.SecretKeyEntry keyEntry = (KeyStore.SecretKeyEntry) keyStore.getEntry("Empire", null);
+            final SecretKey secretKey = keyEntry.getSecretKey();
+
+            final Cipher cipher = Cipher.getInstance("AES/GCM/NoPadding");
+            byte[] bytes = Base64.decode(encryptedString, Base64.DEFAULT);
+            byte[] iv = new byte[12];
+            System.arraycopy(bytes, 0, iv, 0, 12);
+            final GCMParameterSpec spec = new GCMParameterSpec(128, iv);
+            cipher.init(Cipher.DECRYPT_MODE, secretKey, spec);
+            data = new String(cipher.doFinal(bytes, 12, bytes.length-12));
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+        return data;
+    }
+
+    public static Map<String, String> getPrefs() {
+        String IP, user, passwd;
+        Map<String, String> map = null;
+        try {
+            File prefsFile = new File(MyApplication.getContext().getString(R.string.filePath));
+            if (prefsFile.exists()) {
+                SharedPreferences prefs = MyApplication.getContext().getSharedPreferences("EmpirePrefs", MODE_PRIVATE);
+                IP = prefs.getString(md5(MyApplication.getContext().getString(R.string.IP)), null);
+                user = prefs.getString(md5(MyApplication.getContext().getString(R.string.user)), null);
+                passwd = prefs.getString(md5(MyApplication.getContext().getString(R.string.pass)), null);
+
+                map = new HashMap<>();
+                map.put("IP", decrypt(IP));
+                map.put("passwd", decrypt(passwd));
+                map.put("user", decrypt(user));
+            }
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+        return map;
+    }
+
+    public static void writePrefs(String user, String pass, String address) {
+        try {
+            keyGen();
+            SharedPreferences prefs = MyApplication.getContext().getSharedPreferences("EmpirePrefs", MODE_PRIVATE);
+            SharedPreferences.Editor editor = prefs.edit();
+            editor.putString(md5(MyApplication.getContext().getString(R.string.user)), storeCreds(user));
+            editor.putString(md5(MyApplication.getContext().getString(R.string.pass)), storeCreds(pass));
+            editor.putString(md5(MyApplication.getContext().getString(R.string.IP)), storeCreds(address));
+            editor.commit();
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+    }
+
+    private static String md5(String keys) {
+        String hex = null;
+        try {
+            final String MD5 = "MD5";
+            MessageDigest digest = java.security.MessageDigest.getInstance(MD5);
+            digest.update(keys.getBytes());
+            byte messageDigest [] = digest.digest();
+
+            StringBuilder hexString = new StringBuilder();
+            for (byte aMessageDigest : messageDigest) {
+                String h = Integer.toHexString(0xFF & aMessageDigest);
+                while (h.length() < 2)
+                    h = "0" + h;
+                hexString.append(h);
+            }
+            hex = hexString.toString();
+
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+        return hex;
+    }
 }
+

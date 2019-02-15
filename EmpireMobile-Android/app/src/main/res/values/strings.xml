@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">Empire Mobile</string>
+    <string name="IP">address</string>
+    <string name="user">user</string>
+    <string name="pass">passwd</string>
+    <string name="filePath">/data/data/xyz.pickles.empire/shared_prefs/EmpirePrefs.xml</string>
     <item name="visible" type="id"></item>
 </resources>

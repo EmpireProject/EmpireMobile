@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import org.json.JSONObject;
 import android.widget.LinearLayout;
@@ -20,6 +21,7 @@ import java.security.KeyStore;
 import java.security.KeyStoreException;
 import java.security.NoSuchAlgorithmException;
 import java.util.Enumeration;
+import java.util.Map;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -29,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
     TextView alertTView;
     String serial;
     Boolean mCert = false;
+    CheckBox save;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +43,20 @@ public class MainActivity extends AppCompatActivity {
         IP = (EditText)findViewById(R.id.input_server);
         passw = (EditText)findViewById(R.id.input_password);
         auth = (Button)findViewById(R.id.button);
+        save = (CheckBox)findViewById(R.id.save_CB);
+
+        try {
+            Map<String, String> map = helper.getPrefs();
+            if (!map.isEmpty()) {
+                System.out.println("map contents: " + map.get("user") + " " + map.get("IP") + " " + map.get("passwd"));
+                user.setText(map.get("user"));
+                IP.setText(map.get("IP"));
+                passw.setText(map.get("passwd"));
+            }
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+
 
         auth.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -60,6 +77,9 @@ public class MainActivity extends AppCompatActivity {
                     MyApplication mApp1 = ((MyApplication)getApplicationContext());
                     mApp1.setAddress(address);
                     final String http = "https://".concat(address).concat("/api/admin/login");
+                    if (save.isChecked()) {
+                        helper.writePrefs(username, password, address);
+                    }
 
                     try
                     {
@@ -77,7 +97,7 @@ public class MainActivity extends AppCompatActivity {
                                 if(cert.getIssuerDN().getName().contains("Empire")){
                                     System.out.println("0x".concat(cert.getSerialNumber().toString(16)));
                                     mCert = true;
-                                    serial = "0x" + cert.getSerialNumber().toString(16);
+                                    serial = "0x".concat(cert.getSerialNumber().toString(16));
                                 }
                             }
                             //If the cert exists, display Serial # for approval, if yes, pass creds into getToken AsyncTask
