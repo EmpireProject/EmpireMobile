@@ -120,8 +120,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
             if (saveSwitch != nil) {
                 
             }
+            if saveSwitch.isOn {
+                setData()
+            } else {}
             
-            setData()
             
             let addysplit = address.components(separatedBy: ":")
             let addy = addysplit[0]
