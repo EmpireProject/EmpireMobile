@@ -23,7 +23,6 @@
 		FBE5BB0920AB60EF004CBE07 /* AgentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE5BB0820AB60EF004CBE07 /* AgentsViewController.swift */; };
 		FBEADD81209BB10F00CA68C5 /* PostLoginControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEADD80209BB10F00CA68C5 /* PostLoginControllerViewController.swift */; };
 		FBEADD83209CD86500CA68C5 /* helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEADD82209CD86500CA68C5 /* helper.swift */; };
-		FBEADD85209D3EF000CA68C5 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FBEADD84209D3EF000CA68C5 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,7 +70,6 @@
 		FBE5BB0820AB60EF004CBE07 /* AgentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentsViewController.swift; sourceTree = "<group>"; };
 		FBEADD80209BB10F00CA68C5 /* PostLoginControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostLoginControllerViewController.swift; sourceTree = "<group>"; };
 		FBEADD82209CD86500CA68C5 /* helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = helper.swift; sourceTree = "<group>"; };
-		FBEADD84209D3EF000CA68C5 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		FE4BC7E60381687C8F7DB21A /* Pods_Empire_MobileUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Empire_MobileUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -129,7 +127,6 @@
 		FB5334B220979BFB00F5483C = {
 			isa = PBXGroup;
 			children = (
-				FBEADD84209D3EF000CA68C5 /* Default-568h@2x.png */,
 				FB5334BD20979BFB00F5483C /* Empire-Mobile */,
 				FB5334D220979BFD00F5483C /* Empire-MobileTests */,
 				FB5334DD20979BFD00F5483C /* Empire-MobileUITests */,
@@ -296,7 +293,6 @@
 			files = (
 				FB5334C620979BFD00F5483C /* Assets.xcassets in Resources */,
 				FB5334C420979BFB00F5483C /* Main.storyboard in Resources */,
-				FBEADD85209D3EF000CA68C5 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
