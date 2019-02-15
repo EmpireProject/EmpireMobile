@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_9" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -84,7 +83,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error: Illegal Characters Used" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fq7-5a-wah">
-                                <rect key="frame" x="306" y="210" width="201" height="25"/>
+                                <rect key="frame" x="305.66666666666669" y="210" width="201" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="201" id="UQo-ZZ-xKf"/>
                                 </constraints>
@@ -92,16 +91,23 @@
                                 <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="okL-bT-EeM">
+                                <rect key="frame" x="552" y="234" width="51" height="31"/>
+                                <color key="onTintColor" red="0.0" green="1" blue="0.051855699339999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" red="0.20539859590000001" green="0.20539859590000001" blue="0.20539859590000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="okL-bT-EeM" firstAttribute="leading" secondItem="IyH-E5-wqK" secondAttribute="trailing" constant="21" id="0FL-Hs-NMS"/>
                             <constraint firstItem="9fu-y9-bFX" firstAttribute="centerX" secondItem="8Ez-Pk-2rB" secondAttribute="centerX" id="3LH-Rv-agf"/>
                             <constraint firstItem="8Ez-Pk-2rB" firstAttribute="top" secondItem="wem-eX-MhF" secondAttribute="bottom" id="8R3-wE-KGG"/>
                             <constraint firstItem="IyH-E5-wqK" firstAttribute="top" secondItem="fq7-5a-wah" secondAttribute="bottom" id="9n2-n2-lil"/>
                             <constraint firstItem="XuH-ve-vWY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="D6y-OH-GSf"/>
+                            <constraint firstItem="okL-bT-EeM" firstAttribute="top" secondItem="EkM-ho-dq3" secondAttribute="top" constant="106" id="OxW-Zd-d2f"/>
                             <constraint firstItem="9fu-y9-bFX" firstAttribute="top" secondItem="IyH-E5-wqK" secondAttribute="bottom" constant="35" id="V1f-JW-9qr"/>
                             <constraint firstItem="fq7-5a-wah" firstAttribute="top" secondItem="8Ez-Pk-2rB" secondAttribute="bottom" id="VJP-Tt-0Xb"/>
                             <constraint firstItem="fq7-5a-wah" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Wtx-Yq-g5W"/>
+                            <constraint firstItem="IyH-E5-wqK" firstAttribute="bottom" secondItem="okL-bT-EeM" secondAttribute="bottom" id="fDs-5b-fgH"/>
                             <constraint firstItem="8Ez-Pk-2rB" firstAttribute="top" secondItem="EkM-ho-dq3" secondAttribute="bottom" constant="22" id="haW-px-yPx"/>
                             <constraint firstItem="XuH-ve-vWY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="kBR-zB-8qN"/>
                             <constraint firstItem="IyH-E5-wqK" firstAttribute="top" secondItem="8Ez-Pk-2rB" secondAttribute="bottom" constant="25" id="mju-MX-0FL"/>
@@ -123,6 +129,7 @@
                         <outlet property="authButton" destination="9fu-y9-bFX" id="b5m-5u-yuB"/>
                         <outlet property="empireImage" destination="XuH-ve-vWY" id="a0t-Cf-Mxe"/>
                         <outlet property="passTextField" destination="IyH-E5-wqK" id="YcA-yq-e8m"/>
+                        <outlet property="saveSwitch" destination="okL-bT-EeM" id="kpu-Lg-MUg"/>
                         <outlet property="userTextField" destination="8Ez-Pk-2rB" id="sY8-CE-q22"/>
                     </connections>
                 </viewController>

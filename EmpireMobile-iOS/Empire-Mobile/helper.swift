@@ -25,6 +25,7 @@ class Helper{
         }
         return true
     }
+    
 }
 
 struct GlobalVar{
